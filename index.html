@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="img-box">
+            <div class="logo-and-name">
+                <img src="./images/logo.png">
+                <div class="company-name">COSMO</div>
+            </div>
+            <img class="cover-img" src="./images/cover-img.jpg" alt="">
+        </div>
+        <div class="text-box">
+            <div class="upper-text">
+                <div class="description">
+                    A fictional platform that connects space enthusiasts, amateur astronomers, and science lovers. Users can share stargazing experiences, join virtual telescope sessions, and learn about celestial events
+                </div>
+                <div class="quote">
+                    The universe is calling — join Cosmo and explore the stars together.
+                </div>
+            </div>
+            <div class="form-section">
+                <div class="text-before-form">Let's Do this!</div>
+                <form action="https://www.example.com/" method="post">
+                    <div class="first-row">
+                        <div class="input-box">
+                            <label for="first-name">FIRST NAME</label>
+                            <br>
+                            <input type="text" id="first-name" name="first-name" minlength="3" maxlength="15" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="last-name">LAST NAME</label>
+                            <br>
+                            <input type="text" id="last-name" name="last-name" minlength="3" maxlength="15" required>
+                        </div>
+                    </div>
+                    <div class="second-row">
+                        <div class="input-box">
+                            <label for="email">EMAIL</label>
+                            <br>
+                            <input type="email" id="email" name="email" maxlength="40" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <br>
+                            <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{10}" minlength="10" maxlength="10" required >
+                        </div>
+                    </div>
+                    <div class="third-row">
+                        <div class="input-box">
+                            <label for="pwd">PASSWORD</label>
+                            <br>
+                            <input type="password" id="pwd" name="pwd" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                            <br>
+                            <input type="password" id="confirm-pwd" name="confirm-pwd" required>
+                            <small id="error"></small>
+                        </div>
+                    </div>
+                    <div class="submit-section">
+                        <button type="submit">Create Account</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

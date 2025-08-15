@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap');
+@font-face {
+    font-family: "Norse-bold";
+    src: url("./fonts/Norse-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { 
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    display:flex;
+}
+
+.img-box {
+    height: 100%;
+    width: 35vw;
+}
+
+.logo-and-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    height: 20vh;
+    width: 35vw;
+    gap:10px;
+    position: absolute;
+    top:20vh;
+    
+}
+
+.company-name {
+    font-family: "Norse-bold", sans-serif;
+    color:white;    
+    font-size:6rem;
+}
+
+.logo-and-name img {
+    width: auto;
+    height: 100%;
+    object-fit:scale-down;
+}
+
+.text-box {
+    background-color: black;
+    color:white;
+    height:100%;
+    width: 65vw;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+    justify-content: center;
+    padding:3%;
+}
+
+.img-box .cover-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#error {
+    color: red;
+}
+
+.form-section , form {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.first-row, .second-row, .third-row {
+    display:flex;
+    gap:60px;
+}
+
+.description, button, .text-before-form, .quote {
+    font-family: "Montserrat", sans-serif;
+}
+
+.quote {
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 5%;
+}
+
+.text-before-form , .quote {
+    font-size:1.3rem;
+}
+
+
+
+label {
+    font-family: "Cascadia Code", sans-serif;
+    font-size:0.8rem;
+    margin:5px;
+}
+
+button {
+    padding:10px 40px;
+    border-radius:10px;
+    font-size: 1rem;
+    color:white;
+    background-color:rgb(0, 0, 0);
+    border:1px solid white;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+input {
+    padding: 8px;
+    border-radius:7px;
+    transition: all 0.2s ease;
+    margin:2px;
+}
+
+input:focus, input:hover {
+    transform: scale(1.05);
+}
+
