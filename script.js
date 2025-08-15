@@ -8,7 +8,7 @@ let form
 submitBtn.addEventListener("click", function(event){
     if (firstPwd.value !== secondPwd.value) {
         event.preventDefault()
-        errorMsg.textContent= "Both Passwords must match"
+        errorMsg.textContent= "(Both Passwords must match)"
         secondPwd.focus()
     }
 })

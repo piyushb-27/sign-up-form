@@ -69,6 +69,8 @@ body {
 
 #error {
     color: red;
+    margin:3px;
+    
 }
 
 .form-section , form {
